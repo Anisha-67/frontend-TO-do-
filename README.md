@@ -1,6 +1,7 @@
 # frontend-TO-do-Application
 
 The To-Do List application is a simple yet functional web app that allows users to add, manage,and remove tasks.
+This is built using HTML,CSS,Javascript.
 This project gave me  hands-on experience with HTML for structure, CSS for styling, and JavaScript for functionality. 
 Through this project, I understood how to work with basic DOM manipulation, handle user input, and perform operations such as adding and removing items.
 
