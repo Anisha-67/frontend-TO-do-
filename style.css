@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5,white);
+    background-image: url("TOO.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background-color:mistyrose;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #333;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.task-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 0px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.task-input input:focus {
+    border-color: #28a745;
+}
+
+.task-input button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#addTaskButton {
+    background-color:lightcoral;
+    color: black;
+}
+
+#addTaskButton:hover {
+    background-color: #218838;
+}
+
+#saveTaskButton {
+    background-color:indianred;
+}
+
+#saveTaskButton:hover {
+    background-color: #0069d9;
+}
+
+#loadTaskButton {
+    background-color:lightsalmon;
+    color: black;
+}
+
+#loadTaskButton:hover {
+    background-color: #e0a800;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.task-item small {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #777;
+}
